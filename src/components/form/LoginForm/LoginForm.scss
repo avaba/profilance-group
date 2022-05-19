@@ -1,0 +1,14 @@
+.login {
+  width: 350px;
+  max-width: 100%;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__error {
+    color: var(--accent);
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+}

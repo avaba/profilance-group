@@ -1,0 +1,48 @@
+.header {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin-bottom: 50px;
+  
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    a {
+      color: #000;
+      font-weight: bold;
+      
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+    margin-right: 40px;
+
+    @media only screen and (max-width: 700px) {
+      margin-right: 0;
+      max-width: 55px;
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 0 0;
+
+    li {
+      margin-right: 15px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
