@@ -4,6 +4,7 @@ import Layout from "./components/common/Layout/Layout";
 import Home from "./pages/Home";
 import News from './pages/News';
 import AddNews from "./pages/AddNews";
+import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/news" element={<News/>}/>
-                    <Route path="/add-news" element={<AddNews/>}/>
+                    <Route path="/add-news" element={<PrivateRoute outlet={<AddNews/>}/>}/>
                 </Routes>
             </Layout>
         </Router>
